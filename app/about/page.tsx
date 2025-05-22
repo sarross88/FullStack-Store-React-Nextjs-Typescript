@@ -15,10 +15,10 @@ const AboutPage = () => {
         millions of people doing it imperfectly.” -Anne Marie Bonneau ​ At
         Mindful Merchant we celebrate whatever sustainable habits fit your
         lifestyle. Small choices matter, so we aim to offer a variety of
-        everyday essentials that can fit seamlessly into anyone's routine.
-        Low-waste living doesn't have to be all-or-nothing - something as simple
+        everyday essentials that can fit seamlessly into anyones routine.
+        Low-waste living doesnt have to be all-or-nothing - something as simple
         as switching to a bamboo toothbrush or reusable water bottle makes a
-        difference. ​ And we don't see this as a new idea. Choosing well crafted
+        difference. ​ And we dont see this as a new idea. Choosing well crafted
         products you can reuse rather than disposable single-use items is
         timeless. We see a connection between modern low-waste practices and
         decades-old values and methods. Our goal is to share that connection
