@@ -1,5 +1,4 @@
 'use client'
-
 import { Input } from '../ui/input'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { useDebouncedCallback } from 'use-debounce'
@@ -11,7 +10,6 @@ function NavSearch() {
   const [search, setSearch] = useState(
     searchParams.get('search')?.toString() || ''
   )
-  // delay in input so not always calling database
   const handleSearch = useDebouncedCallback((value: string) => {
     const params = new URLSearchParams(searchParams)
     if (value) {
@@ -21,12 +19,12 @@ function NavSearch() {
     }
     replace(`/products?${params.toString()}`)
   }, 300)
-
+  const updatedSearchParams = searchParams.get('search')
   useEffect(() => {
-    if (!searchParams.get('search')) {
+    if (!updatedSearchParams) {
       setSearch('')
     }
-  }, [searchParams.get('search')])
+  }, [updatedSearchParams])
   return (
     <Input
       type="search"

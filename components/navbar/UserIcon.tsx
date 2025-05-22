@@ -1,5 +1,6 @@
 import { LuUserRound } from 'react-icons/lu'
 import { currentUser, auth } from '@clerk/nextjs/server'
+import Image from 'next/image'
 
 async function UserIcon() {
   // const { userId } = auth()
@@ -7,7 +8,7 @@ async function UserIcon() {
   const profileImage = user?.imageUrl
   if (profileImage) {
     return (
-      <img
+      <Image
         className="w-6 h-6 rounded-full object-cover"
         src={profileImage}
         alt="current user image"
